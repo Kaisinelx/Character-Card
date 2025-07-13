@@ -1,0 +1,23 @@
+{
+  "name": "Thalen Thornheart 🐇",
+  "class": "Level 3 • Druid",
+  "emoji": "≽^• ˕ • ྀི≼",
+  "stats": {
+    "Str": {"value": 10, "mod": 0},
+    "Dex": {"value": 14, "mod": 2},
+    "Con": {"value": 15, "mod": 2},
+    "Int": {"value": 12, "mod": 1},
+    "Wis": {"value": 20, "mod": 5},
+    "Cha": {"value": 17, "mod": 3}
+  },
+  "hp": 45,
+  "ac": 15,
+  "quoteFront": "The cosmos listens, and I, shall too, answer.",
+  "about": "Formerly a weaver of fine garments within bustling city markets, Thalen embraced nature’s gentle whispers and became a devoted druid of the Circle of Dreams. Now he weaves with vines and starlight, listening to melodies hidden within the cosmos.",
+  "inventory": [
+    "\ud83c\udf3f Druidic Focus",
+    "\ud83c\udf1f Sylvan Cloak",
+    "\ud83c\udf47 Goodberries (6)"
+  ],
+  "quoteBack": "The stars hold secrets... and I hold the key."
+}
