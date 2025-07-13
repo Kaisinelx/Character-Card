@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card-container">
+  <div class="card-container" tabindex="0" role="button" aria-pressed="false">
     <div class="card-inner">
       <!-- FRONT -->
       <div class="card card-front">
@@ -17,50 +17,41 @@
           <div class="card-top">
             <img src="./your-character.png" alt="Character Art" class="character-image">
             <div class="name-block">
-              <h1 class="name">Thalen Thornheart 🐇</h1>
-              <h2 class="class">Level 3 • Druid</h2>
-              <h3 class="emoji" >≽^• ˕ • ྀི≼</h3> 
+              <h1 class="name" id="name"></h1>
+              <h2 class="class" id="class"></h2>
+              <h3 class="emoji" id="emoji"></h3>
             </div>
           </div>
 
           <div class="stats">
-            <div class="stat"><img src="Str.png" class="stat-icon" /> <div class="stat-value">10 <span class="modifier">[+0]</span></div></div>
-            <div class="stat"><img src="Dex.png" class="stat-icon" /> <div class="stat-value">14 <span class="modifier">[+2]</span></div></div>
-            <div class="stat"><img src="Con.png" class="stat-icon" /> <div class="stat-value">15 <span class="modifier">[+2]</span></div></div>
-            <div class="stat"><img src="Int.png" class="stat-icon" /> <div class="stat-value">12 <span class="modifier">[+1]</span></div></div>
-            <div class="stat"><img src="Wis.png" class="stat-icon" /> <div class="stat-value">20 <span class="modifier">[+5]</span></div></div>
-            <div class="stat"><img src="Cha.png" class="stat-icon" /> <div class="stat-value">17 <span class="modifier">[+3]</span></div></div>
+            <div class="stat"><img src="Str.png" class="stat-icon" /> <div class="stat-value" id="stat-str"></div></div>
+            <div class="stat"><img src="Dex.png" class="stat-icon" /> <div class="stat-value" id="stat-dex"></div></div>
+            <div class="stat"><img src="Con.png" class="stat-icon" /> <div class="stat-value" id="stat-con"></div></div>
+            <div class="stat"><img src="Int.png" class="stat-icon" /> <div class="stat-value" id="stat-int"></div></div>
+            <div class="stat"><img src="Wis.png" class="stat-icon" /> <div class="stat-value" id="stat-wis"></div></div>
+            <div class="stat"><img src="Cha.png" class="stat-icon" /> <div class="stat-value" id="stat-cha"></div></div>
           </div>
 
           <div class="hp-ac">
-            <div><img src="/heart_icon.png" alt="HP" class="icon" /> HP: 45</div>
-            <div><img src="ac_icon.png" alt="AC" class="icon" /> AC: 15</div>
+            <div><img src="heart_icon.png" alt="HP" class="icon" /> HP: <span id="hp"></span></div>
+            <div><img src="ac_icon.png" alt="AC" class="icon" /> AC: <span id="ac"></span></div>
           </div>
 
-          <div class="quote">“The cosmos listens, and I, shall too, answer.”</div>
+          <div class="quote" id="quote-front"></div>
         </div>
       </div>
 
       <!-- BACK -->
         <div class="card card-back">
         <div class="card-content">
-          <h2>About Thalen</h2>
-          <p>Formerly a weaver of fine garments within bustling city markets, Thalen embraced nature’s gentle whispers and became a devoted druid of the Circle of Dreams. Now he weaves with vines and starlight, listening to melodies hidden within the cosmos.</p>
+          <h2 id="about-title">About Thalen</h2>
+          <p id="about-text"></p>
           <h3>Inventory</h3>
-          <ul>
-            <li>🌿 Druidic Focus</li>
-            <li>🌟 Sylvan Cloak</li>
-            <li>🍇 Goodberries (6)</li>
-          </ul>
-          <p><i>“The stars hold secrets... and I hold the key.”</i></p>
+          <ul id="inventory"></ul>
+          <p id="quote-back"></p>
         </div>
       </div>
     </div>
   </div>
- <script>
-    document.querySelector('.card-container')
-      .addEventListener('click', function () {
-        this.classList.toggle('flipped');
-      });
-  </script>
+ <script src="script.js" defer></script>
 </body>
